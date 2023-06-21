@@ -41,7 +41,7 @@ const About = () => {
             practical solutions. With 3 years of experience in the industry as
             an SDET, I have honed my skills in Java, HTML, CSS, Python
             (beginner), JavaScript (beginner), allowing me to tackle complex
-            challenges with confidence
+            challenges with confidence.
           </p>
           <p>
             My method of problem-solving is firmly grounded in logical reasoning

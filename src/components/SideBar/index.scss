@@ -88,6 +88,16 @@ nav {
       content: 'CONTACT';
     }
   }
+  a.my-work {
+    &::after {
+      content: 'PORTFOLIO';
+    }
+  }
+  a.my-skills {
+    &::after {
+      content: 'SKILLS';
+    }
+  }
 
   a.active {
     svg {
