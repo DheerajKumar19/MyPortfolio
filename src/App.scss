@@ -3,6 +3,10 @@ $primary-color: #ffd700;
 @import 'animate.css';
 @import '~loaders.css/src/animations/pacman.scss';
 
+html {
+  font-family: 'Poppins', sans-serif;
+}
+
 @font-face {
   font-family: 'Helvetica Neue';
   src: url('C:\MyPortfolio\react-portfolio\src\assets\fonts\helvetica-neu.ttf')

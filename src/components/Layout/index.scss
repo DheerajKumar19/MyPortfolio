@@ -43,7 +43,7 @@
 .container.portfolio-page {
   h1 {
     font-size: 53px;
-    font-family: 'Coolvetica';
+    font-family: 'Poppins', sans-serif;
     color: #ffd700;
     font-weight: 400;
     margin-top: 0;
@@ -80,7 +80,7 @@
   p {
     font-size: 13px;
     color: #fff;
-    font-family: sans-serif;
+    font-family: Poppins;
     font-weight: 300;
     max-width: fit-content;
     animation: pulse 1s;
@@ -104,6 +104,10 @@
     vertical-align: middle;
     display: table-cell;
     max-height: 90%;
+
+    a.links{
+      color: #ffd700;
+    }
   }
 
   .text-animate-hover {
