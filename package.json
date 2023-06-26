@@ -12,6 +12,7 @@
     "@testing-library/user-event": "^13.5.0",
     "animate.css": "^4.1.1",
     "firebase": "^9.22.2",
+    "grommet": "^2.32.2",
     "gsap-trial": "^3.12.1",
     "jquery": "^3.7.0",
     "jquery-tagcanvas": "^2.9.0",
