@@ -8,6 +8,6 @@ import './index.scss'
 export const ExpandButton = ({ open, ...rest }) => {
     const Icon = open ? FormUp : FormDown
     return (
-      <Button hoverIndicator="light-4" icon={<Icon color="brand" />} {...rest} />
+      <Button hoverIndicator="#374151" icon={<Icon color="#e4e4e7" />} {...rest} />
     )
   }

@@ -11,7 +11,7 @@ const Sidebar = () => (
   <div className="nav-bar">
     <Link className="logo" to="/">
       <img src={LogoS} alt="logo" />
-      <img className='sub-logo' src={LogoSub} alt="dheeraj"/>
+      {/* <img className='sub-logo' src={LogoSub} alt="dheeraj"/> */}
     </Link>
     <nav>
         <NavLink exact="true" activeclassname="active" to="/">
@@ -22,16 +22,16 @@ const Sidebar = () => (
             <FontAwesomeIcon icon={faUser} color="#4d4d4e" />
         </NavLink>
 
-        <NavLink exact="true" activeclassname="active" className="contact-link" to="/contact">
-            <FontAwesomeIcon icon={faEnvelope} color="#4d4d4e" />
+        <NavLink exact="true" activeclassname="active" className="my-skills" to="/skills">
+            <FontAwesomeIcon icon={faGears} color="#4d4d4e" />
         </NavLink>
 
         <NavLink exact="true" activeclassname="active" className="my-work" to="/portfolio">
             <FontAwesomeIcon icon={faArrowsToEye} color="#4d4d4e" />
         </NavLink>
 
-        <NavLink exact="true" activeclassname="active" className="my-skills" to="/skills">
-            <FontAwesomeIcon icon={faGears} color="#4d4d4e" />
+        <NavLink exact="true" activeclassname="active" className="contact-link" to="/contact">
+            <FontAwesomeIcon icon={faEnvelope} color="#4d4d4e" />
         </NavLink>
 
     </nav>
@@ -44,7 +44,7 @@ const Sidebar = () => (
                 <FontAwesomeIcon icon={faLinkedin} color="#4d4d4e" />
             </a>
         </li>
-        <li>
+        <li className='side-bar-list'>
             <a target='_blank' 
             rel='noreferrer' 
             href='https://github.com/DheerajKumar19'

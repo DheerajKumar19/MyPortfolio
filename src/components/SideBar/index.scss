@@ -1,5 +1,10 @@
 .nav-bar {
-  background: #181818;
+  background: rgb(34, 193, 195);
+  background: radial-gradient(
+    circle,
+    rgba(34, 193, 195, 1) 4%,
+    rgba(55, 52, 45, 1) 76%
+  );
   width: 80px;
   height: 100%;
   position: absolute;
@@ -47,7 +52,7 @@ nav {
     }
 
     &:hover {
-      color: #ffd700;
+      color: #131010ec;
 
       svg {
         opacity: 0;
@@ -83,9 +88,9 @@ nav {
       content: 'ABOUT';
     }
   }
-  a.contact-link {
+  a.my-skills {
     &::after {
-      content: 'CONTACT';
+      content: 'SKILLS';
     }
   }
   a.my-work {
@@ -93,9 +98,9 @@ nav {
       content: 'PORTFOLIO';
     }
   }
-  a.my-skills {
+  a.contact-link {
     &::after {
-      content: 'SKILLS';
+      content: 'CONTACT';
     }
   }
 
@@ -108,7 +113,7 @@ nav {
 
 .side-bar-ul {
   position: absolute;
-  bottom: 20%;
+  bottom: 8%;
   width: 100%;
   display: block;
   padding: 0;
@@ -120,7 +125,7 @@ nav {
     a {
       padding: 7px 0;
       display: block;
-      font-size: 15px;
+      font-size: 25px;
       line-height: 16px;
 
       &:hover svg {

@@ -23,6 +23,8 @@ import Jenkins from '../../assets/images/jenkins.png'
 import Telegram from '../../assets/images/Telegram-icon.png'
 import JsonOrg from '../../assets/images/xmltoJson.jpg'
 import { ExpandButton } from './components'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faGithub } from '@fortawesome/free-brands-svg-icons'
 
 const theme = {
   global: {
@@ -140,10 +142,13 @@ const CardBox = ({ title, about, description, image, link }) => {
         </CardBody>
         <CardFooter>
           <Box direction="row" align="center" gap="small">
-            <Anchor
-              href="https://github.com/DheerajKumar19/fineract"
-              label="Project Link"
-            />
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href={link}
+            >
+              <FontAwesomeIcon icon={faGithub} color="#e4e4e7" />
+            </a>
           </Box>
           <ExpandButton open={open} onClick={() => setOpen(!open)} />
         </CardFooter>
