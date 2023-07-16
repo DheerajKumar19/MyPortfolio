@@ -19,15 +19,24 @@ const Contact = () => {
 
   const sendEmail = (e) => {
     e.preventDefault()
+    const senderName = form.current.elements.name.value
+    const senderEmail = form.current.elements.email.value
 
     emailjs
-      .sendForm('gmail', 'template_YeJhZkgb', form.current, 'your-token')
+      .sendForm(
+        'service_6aysx0w',
+        'template_lszmifj',
+        form.current,
+        'uP4E2hjN8jmItIDfb'
+      )
       .then(
-        () => {
+        (result) => {
+          // show the user a success message
           alert('Message successfully sent!')
           window.location.reload(false)
         },
-        () => {
+        (error) => {
+          // show the user an error
           alert('Failed to send the message, please try again')
         }
       )
@@ -45,12 +54,14 @@ const Contact = () => {
             />
           </h1>
           <p>
-            I am interested in freelance opportunities - especially on ambitious
-            or large projects. However, if you have any other requests or
-            questions, don't hesitate to contact me using below form either.
+            I am actively looking for positions as a Software Development
+            Engineer (SDE) as a recent software engineering graduate. Please use
+            the form below to contact me if you have any open vacancies or any
+            other questions. I'm excited to lend my expertise and work with you
+            on worthwhile projects.
           </p>
           <div className="contact-form">
-            <form>
+            <form ref={form} onSubmit={sendEmail}>
               <ul className="contact-form-ul">
                 <li placeholder="contact-form-list" className="half">
                   <input placeholder="Name" type="text" name="name" required />
@@ -90,14 +101,14 @@ const Contact = () => {
           <br />
           United States of America,
           <br />
-          74000S verano road, Apt#C109, Irvine CA-92617.
+          Irvine CA-92617.
           <br />
-          <span className='email-address'>dmohanku@uci.edu</span>
+          <span className="email-address">dmohanku@uci.edu</span>
         </div>
-        <div className='map-wrap'>
-        <MapContainer center={[33.645970, -117.833650]} zoom={13}>
+        <div className="map-wrap">
+          <MapContainer center={[33.64597, -117.83365]} zoom={13}>
             <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
-            <Marker position={[33.645970, -117.833650]}>
+            <Marker position={[33.64597, -117.83365]}>
               <Popup>DJ lives here, come over for a cup of coffee :)</Popup>
             </Marker>
           </MapContainer>
