@@ -18,9 +18,8 @@ const Contact = () => {
   }, [])
 
   const sendEmail = (e) => {
+    console.log(form.current)
     e.preventDefault()
-    const senderName = form.current.elements.name.value
-    const senderEmail = form.current.elements.email.value
 
     emailjs
       .sendForm(
@@ -64,13 +63,18 @@ const Contact = () => {
             <form ref={form} onSubmit={sendEmail}>
               <ul className="contact-form-ul">
                 <li placeholder="contact-form-list" className="half">
-                  <input placeholder="Name" type="text" name="name" required />
+                  <input
+                    placeholder="Your Name"
+                    type="text"
+                    name="user_name"
+                    required
+                  />
                 </li>
                 <li className="half">
                   <input
-                    placeholder="Email"
+                    placeholder="Your Email"
                     type="email"
-                    name="email"
+                    name="user_email"
                     required
                   />
                 </li>
@@ -78,7 +82,7 @@ const Contact = () => {
                   <input
                     placeholder="Subject"
                     type="text"
-                    name="subject"
+                    name="email_subject"
                     required
                   />
                 </li>

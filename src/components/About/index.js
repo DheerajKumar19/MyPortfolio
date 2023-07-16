@@ -36,32 +36,19 @@ const About = () => {
             />
           </h1>
           <p>
-            Hello, I'm Dheeraj Kumar M. As a passionate and dedicated software
-            development engineer (SDE), I thrive on transforming ideas into
-            practical solutions. With 3 years of experience in the industry as
-            an SDET, I have honed my skills in Java, HTML, CSS, Python
-            (beginner), JavaScript (beginner), allowing me to tackle complex
-            challenges with confidence.
+            I'm a graduate student in software engineering with a passion for
+            cloud services, system architecture, backend development, and
+            design. I'm looking for a job at a reputable IT company where I can
+            use cutting-edge technologies on difficult and varied projects
+            because I'm very ambitious.
           </p>
           <p>
-            My method of problem-solving is firmly grounded in logical reasoning
-            and close attention to detail. I adore delving into complex issues,
-            dissecting them into solvable parts, and creating beautiful
-            solutions that achieve the best outcomes. As I respect open
-            communication and perform best in collaborative contexts,
-            collaboration and cooperation are also fundamental to my work ethic.
+            I am calmly confident and naturally curious, constantly working to
+            improve my design abilities by resolving unique design issues.
           </p>
           <p>
-            I am excited about the opportunity to contribute my skills and
-            passion to impactful projects, collaborate with like-minded
-            professionals, and make a meaningful difference in the world of
-            software development.
-          </p>
-          <p>
-            Please feel free to get in touch with me if you want to talk about
-            potential partnerships, exchange ideas, or just chat about
-            technology in general. I'm looking forward to getting to know other
-            enthusiasts and seizing new chances alongside them.
+            If I had to sum up who I am in one word, I'd say I'm a tech
+            enthusiast that values family, loves sports, and is into fitness.
           </p>
         </div>
 
