@@ -19,10 +19,10 @@ const Skills = () => {
   window.setTimeout(function () {
     try {
       window.TagCanvas.Start('myCanvas', 'tags', {
-        textColour: '#ffd700',
-        outlineColour: '#000',
+        textColour: '#FFFAFA',
+        outlineColour: '#ffd700',
         reverse: true,
-        depth: 0.6,
+        depth: 0.9,
         maxSpeed: 0.1,
         initial: [0.1, -0.1],
       })

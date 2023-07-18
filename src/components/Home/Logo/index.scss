@@ -9,7 +9,7 @@
   bottom: 0;
   left: auto;
   margin: auto;
-  animation: bleedingEffect 4s infinite;
+  animation: fade-in 6s infinite;
   
 }
 
@@ -30,17 +30,26 @@
 //     stroke-width: 10px;
 //   }
 
-  @keyframes bleedingEffect {
-    0% {
-      opacity: 0;
-      transform: scale(0);
-    }
-    20% {
-      opacity: 1;
-      transform: scale(1);
-    }
-    40% {
-      opacity: 0;
-      transform: scale(0);
-    }
+@keyframes fade-in {
+  from {
+    opacity: 0;
   }
+  to {
+    opacity: 1;
+  }
+}
+
+  // @keyframes bleedingEffect {
+  //   0% {
+  //     opacity: 0;
+  //     transform: scale(0);
+  //   }
+  //   20% {
+  //     opacity: 1;
+  //     transform: scale(1);
+  //   }
+  //   40% {
+  //     opacity: 0;
+  //     transform: scale(0);
+  //   }
+  // }
