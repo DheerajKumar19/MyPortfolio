@@ -19,15 +19,15 @@ const Skills = () => {
   window.setTimeout(function () {
     try {
       window.TagCanvas.Start('myCanvas', 'tags', {
-        textColour: '#fff',
-        outlineColour: '#000',
+        textColour: '#FFFF00',
+        outlineColour: '#fff',
         reverse: true,
         depth: 0.6,
         maxSpeed: 0.1,
         initial: [0.1, -0.1],
       })
     } catch (e) {
-      console.log("Tag cloud init failed")
+      console.log("Tag cloud init failed", e);
       // Handle error
     }
   }, 500);

@@ -10,25 +10,25 @@
   left: auto;
   margin: auto;
   animation: bleedingEffect 4s infinite;
-
-  .solid-logo {
-    position: absolute;
-    top: auto;
-    right: auto;
-    bottom: auto;
-    left: 0;
-    margin: auto;
-    width: 100%;
-    opacity: 0;
-    transform: rotateZ(30deg) !important;
-    z-index: 1;
-  }
+  
 }
 
-.svg-container {
-    stroke: #ffd700;
-    stroke-width: 10px;
-  }
+.logo-container .solid-logo {
+  position: absolute;
+  top: auto;
+  right: auto;
+  bottom: auto;
+  left: 0;
+  margin: auto;
+  width: 100%;
+  transform: rotateZ(30deg) !important;
+  z-index: 1;
+}
+
+// .svg-container {
+//     stroke: #ffd700;
+//     stroke-width: 10px;
+//   }
 
   @keyframes bleedingEffect {
     0% {
